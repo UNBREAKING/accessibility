@@ -1,0 +1,743 @@
+@font-face {
+    font-family: Gotham-Book; /* Имя шрифта */
+    src: url(fonts/GothamSSm-Book.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gotham-Medium; /* Имя шрифта */
+    src: url(fonts/GothamSSm-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Gotham-Light; /* Имя шрифта */
+    src: url(fonts/GothamSSm-Light.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+body{
+    background: lightslategrey;
+}
+
+.Button{
+    font-family: Gotham-Book;
+    margin-top: 15px;
+    color:white;
+    font-size: 15px;
+    background-color: rgb(251,99,98) ;
+    width:298px;
+    height: 60px;
+    border-radius: 4px;
+    border:none;
+    margin-left: 22px;
+    text-transform: uppercase;
+    border-bottom: 1px solid lightgrey;
+    border-color: black;
+}
+
+
+header{
+
+}
+
+header:focus{
+    outline: 3px solid lawngreen;
+}
+
+.Widgets{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+fieldset{
+    border: none;
+}
+
+/**
+ * Calendar
+ */
+
+.prev,.next{
+    width: 10px;
+    height:25px;
+    position:absolute;
+
+}
+
+.prev{
+    margin-top: 18px;
+    margin-left: 37px;
+    background: url(sprites/calendar_sprite.gif) 0 0 no-repeat;
+}
+.prev span{
+    opacity: 0;
+}
+
+.next{
+    background: url(sprites/calendar_sprite.gif) -10px 0px no-repeat;
+    margin-top: -42px;
+    margin-left: 300px;
+}
+.next span{
+    opacity: 0;
+}
+
+#calendar{
+    font-weight:100;
+    width: 346px;
+    height: 426px;
+    background-color: white;
+}
+#calendar .header{
+    font-family: Gotham-Book;
+    height: 60px;
+    font-size: 17px;
+    color:rgb(255,255,255);
+    text-align: center;
+    background-color: rgb(64,74,88);
+    line-height: 60px;
+
+}
+
+#calendar table{
+
+    font-family: Gotham-Book;
+    margin-top: 15px;
+    margin-left: 22px;
+    color: rgb(102,102,102);
+    font-size: 14px;
+}
+#calendar table th{
+    width: 38px;
+    height: 38px;
+}
+
+.NotThisMonth{
+    color:rgb(197,197,197);
+}
+
+.Holiday{
+    color: rgb(251,99,98);
+}
+
+.Today{
+    color:white;
+    background-color: rgb(251,99,98) ;
+    border-radius: 25px;
+}
+
+.gotham-medium{
+
+    font-family: Gotham-Medium;
+}
+
+/**
+ * Booking
+ */
+
+#booking{
+    width: 346px;
+    background: white;
+
+}
+
+
+
+#booking h2{
+    font-family: Gotham-Book;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: -70px;
+    margin-bottom: 0px;
+    color:white;
+}
+
+#booking .header .icon{
+    width: 15px;
+    height: 25px;
+    background: url(sprites/calendar_sprite.gif) -20px 0px no-repeat;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 27px;
+}
+
+#booking a{
+    font-family: Gotham-Light;
+    margin-left: 45px;
+    font-size: 13px;
+    color:white;
+}
+
+#booking label{
+    font-family: Gotham-Book;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 900;
+    color: rgb(102,102,102);
+}
+#booking #CheckIn,#CheckOut,#Children,#Adults{
+    font-family: Gotham-Light;
+    background: rgb(244,244,244);
+    height: 45px;
+    margin-left: -30px;
+    border-radius: 3px;
+    border: none;
+    border-top: 1px solid lightgrey;
+    padding-left: 14px;
+
+}
+
+#booking #CheckIn,#CheckOut{
+    color: rgb(153,152,152);
+    font-size: 14px;
+    width: 282px;
+    font-weight:600;
+}
+
+#booking #Adults,#Children{
+    font-size: 16px;
+    font-weight: 900;
+    color:rgb(65,75,89);
+    width:125px;
+}
+
+#booking form{
+    margin-top: 18px;
+}
+
+
+#booking form dt{
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+#booking .Button{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#booking .row div{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#booking .row dt{
+    margin-top: 5px;
+}
+
+#booking form .icon{
+    position: absolute;
+    width:37px;
+    height: 37px;
+    border-radius: 2px;
+    background: rgb(65,75,89);
+
+    border: none;
+    margin-left: -42px;
+    margin-top: 7px;
+}
+
+#booking form .icon .calendarimage
+{
+width: 20px;
+    height: 20px;
+    background: url(sprites/calendar_sprite.gif) -35px -1px no-repeat;
+    margin-left: 3px;
+}
+#booking .row .icon{
+     margin-top: 5px;
+     margin-left:-42px ;
+ }
+#booking .row .icon .triangleimage
+{
+    margin-left: 4px;
+    width: 12px;
+    height: 20px;
+    background: url(sprites/calendar_sprite.gif) -55px -1px no-repeat;
+}
+
+
+
+
+#booking .ForCheckBox{
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+#booking .ForCheckBox label{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    margin-top: -1px;
+    margin-left: -1px;
+    opacity: 0;
+}
+
+
+.ForCheckBox div{
+    margin-left: 5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    border: none;
+    border-top: 1px solid lightgrey;
+    background:rgb(244,244,244);
+}
+
+.ForCheckBox div .CheckImg{
+    width: 22px;
+    height: 22px;
+    margin-top: -25px;
+    margin-left: 0px;
+    border: none;
+    background: none;
+}
+.CheckImg{
+    background: none;
+}
+input[type="checkbox"]:checked + .CheckImg{
+    background: url(sprites/calendar_sprite.gif) 0px -78px no-repeat;
+
+}
+button .iconsearch{
+    width: 25px;
+    height: 22px;
+    background: url(sprites/calendar_sprite.gif) -68px -1px no-repeat;
+    position: absolute;
+    margin-left: 40px;
+}
+/**
+ * Destination
+ */
+
+#destination {
+    height:340px;
+    width: 792px;
+    background: white;
+}
+
+#destination div{
+    display: inline-block;
+
+}
+#destination .panel{
+    width:70px;
+    height: 340px;
+    position: absolute;
+}
+
+#destination .img{
+    margin-left: 430px;
+}
+
+
+.panel ul{
+    margin-top: 5px;
+    margin-left: -40px;
+}
+
+.panel li{
+    display: inline-block;
+    margin-top: -5px;
+    width: 70px;
+    height: 117px;
+    border-top:1px solid black ;
+    background: rgb(64,74,88);
+}
+
+.panel li a{
+    position:absolute;
+    height:30px;
+
+}
+
+.panel .first-icon{
+    width: 27px;
+    background: url(sprites/calendar_sprite.gif) 0px -24px no-repeat;
+    margin-left: 20px;
+    margin-top: 45px;
+    height: 30px;
+}
+
+.panel .second-icon{
+    width: 20px;
+    background: url(sprites/calendar_sprite.gif) -27px -24px no-repeat;
+    margin-left: 25px;
+    margin-top: 45px;
+}
+
+.panel .third-icon{
+    width: 25px;
+    height: 30px;
+    background: url(sprites/calendar_sprite.gif) -46px -24px no-repeat;
+    margin-left: 23px;
+    margin-top: 50px;
+}
+
+.panel li:first-child{
+    border: none;
+    height: 106px;
+}
+
+.panel ul .selected{
+    background: rgb(251,99,98);
+}
+
+.info{
+    width: 320px;
+    height: 340px;
+    background: rgb(255,255,255);
+    position: absolute;
+padding-left: 30px;
+margin-left: 75px;
+}
+
+.info h3{
+    width:200px;
+    font-family: Gotham-Medium;
+    color: rgb(77,77,77);
+    margin-top: -45px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info p{
+    color:rgb(153,153,153);
+    font-size: 15px;
+    margin-top: -9px;
+    font-family: Gotham-Light;
+    font-weight: 600;
+
+}
+
+.info #CounterReviews{
+    color:rgb(77,77,77);
+    font-size: 14px;
+}
+
+.info #description{
+    width: 290px;
+    margin-top: 26px;
+    line-height: 1.8;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.info a{
+    color:rgb(251,99,98);
+    font-family: Gotham-Book;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#destination .square{
+
+    background: white;
+    width:25px;
+    height: 25px;
+    margin-left: 310px;
+    margin-top: 40px;
+    transform: rotate(45deg);
+
+}
+
+.img .text{
+    position: absolute;
+    margin-top: -30px;
+}
+.img .iconComments{
+    width: 32px;
+    height: 23px;
+    background: url(sprites/calendar_sprite.gif) -68px -24px no-repeat;
+    margin-left: -35px;
+    position: absolute;
+}
+
+.img .iconLikes{
+    position: absolute;
+    margin-left: -35px;
+    width: 28px;
+    height: 26px;
+    background: url(sprites/calendar_sprite.gif) 0px -56px no-repeat;
+
+}
+
+.img .text{
+    position: relative;
+    height: 30px;
+    float: right;
+    margin-right:40px ;
+    margin-top: -50px;
+}
+.text button{
+    background: none;
+    border: none;
+    font-family: Gotham-Book;
+    color: white;
+    margin-left: 40px;
+}
+
+/**
+ * Email
+ */
+
+#email{
+    width: 380px;
+
+    background: white;
+}
+
+#email .Button{
+    width: 126px;
+    height: 48px;
+    margin-left: 228px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+#email fieldset{
+    padding-top: 0px;
+}
+
+#email dd{
+    margin-top: 26px;
+    margin-left: 10px;
+}
+
+
+
+
+#email input[type="text"]{
+    width: 320px;
+    height: 42px;
+    font-family: Gotham-Light;
+    background: rgb(244,244,244);
+    border-radius: 3px;
+    border:none;
+    border-top: 1px solid lightgrey;
+    color: rgb(153,152,152);
+    font-weight: 600;
+    padding-left: 11px;
+    font-size: 14px;
+}
+
+#email textarea{
+    font-weight: 600;
+    background: rgb(244,244,244);
+    width: 320px;
+    height: 224px;
+    border:none;
+    border-top: 1px solid lightgrey;
+    color: rgb(153,152,152);
+    resize:none;
+    font-size: 14px;
+    font-family: Gotham-Light;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+
+
+
+#email .iconEmail,.iconSubject{
+    height: 20px;
+    position: absolute;
+
+}
+
+#email .iconEmail{
+    margin-top: -30px;
+    width: 17px;
+    margin-left: 302px;
+    background:  url(sprites/calendar_sprite.gif) -29px -60px no-repeat;
+}
+
+#email .iconSubject{
+    width: 20px;
+    margin-top: 15px;
+    margin-left: -32px;
+    background:  url(sprites/calendar_sprite.gif) -48px -58px no-repeat;
+}
+
+#email .Usersemails{
+    width: 326px;
+    height: 42px;
+    font-family: Gotham-Light;
+    background: rgb(244,244,244);
+    border-radius: 3px;
+    border:none;
+    border-top: 1px solid lightgrey;
+    color: rgb(153,152,152);
+    font-weight: 600;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
+.Usersemails .Emailtext{
+    background:rgb(65,75,89);
+    margin-top: 3px;
+    height:26px;
+    color:white;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: auto;
+    display: inline-block;
+}
+
+.Emailtext .deleteuserimage{
+    display: inline;
+    padding-left: 20px;
+    width: 20px;
+    height:20px;
+    margin-left: 5px;
+    background:  url(sprites/calendar_sprite.gif) -70px -58px no-repeat;
+}
+/**
+ * Bars
+ */
+
+#bars{
+    width: 750px;
+    height:340px;
+    padding-left: 42px;
+    background: white;
+}
+
+#bars .metrics div{
+    width: 700px;
+    border-bottom: 1px solid rgb(234,234,234);
+    font-family: Gotham-Medium;
+    font-size: 12px;
+    margin-top: 53px;
+    color:rgb(102,102,102);
+    }
+
+#bars .metrics div:first-child{
+    margin-top: 44px;
+}
+
+.Bars{
+    font-family: Gotham-Medium;
+    font-size: 12px;
+    color:rgb(102,102,102);
+    margin-left: 31px;
+    margin-top: -216px;
+}
+
+.Bars .Bar{
+    display: inline-block;
+    margin-left: 32px;
+
+    width: 54px;
+    text-align: center;
+}
+
+.Bars .Bar .sum{
+    height: 23px;
+    color: white;
+    background: rgb(64,74,88);
+    padding-top: 8px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    visibility:hidden;
+}
+
+.Bars .Bar .sum .triangle{
+    width: 10px;
+    height: 10px;
+    background:rgb(64,74,88);
+    margin-top: 3px;
+    margin-left: 22px;
+    transform: rotate(45deg);
+}
+.Bars .Bar .block{
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.Bars .Bar .block div{
+    background:rgb(251,99,98) ;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    transform: scale(-1, 1);
+}
+.Bars .Bar:hover .sum{
+    visibility:visible;
+}
+
+.Bars .Bar:first-child .block{
+    height: 49px;
+
+}
+
+
+
+.Bars .Bar:nth-child(2) .block{
+    height: 62px;
+}
+
+.Bars .Bar:nth-child(3) .block{
+     height: 119px;
+ }
+
+
+.Bars .Bar:nth-child(4) .block{
+     height: 158px;
+ }
+
+
+.Bars .Bar:nth-child(5) .block{
+    height: 128px;
+}
+
+.Bars .Bar:nth-child(6) .block{
+    height: 170px;
+}
+
+
+.Bars .Bar:last-child .block{
+     height: 142px;
+ }
+
+.Bars .Bar .block div{
+
+    width: 100%;
+    height: 100%;
+    position:relative;
+    top:0;
+}
+
+
+@keyframes grow {
+    from {
+        height: 0;
+        top: 100%;
+    }
+}
+.Bars .Bar .block div{
+    animation: grow 3s ;
+
+}
+
+/**
+ * Accessibility
+ */
+
+
+.wcag-hidden{
+    border: 0;
+    clip:rect(0 0 0 0);
+    height:  1px;
+    margin: -1px;
+    position: absolute;
+    padding: 0;
+    width: 1px;
+}

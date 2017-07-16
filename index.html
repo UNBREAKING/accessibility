@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms and Widgets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section aria-label="calendar widget">
+<div  id="calendar" class="Widgets" >
+    <a href="#" class="prev" role="button" > <span class="wcag-hidden">Previous month</span></a>
+    <div class="header">
+        May 2014
+    </div>
+    <a href="#" class="next" role="button"><span class="wcag-hidden">Next month</span></a>
+    <table>
+        <tr class="gotham-medium">
+            <th value="Sunday">Sun</th>
+
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        <tr>
+            <th class="NotThisMonth">29</th> <th class="NotThisMonth">30</th> <th>1</th> <th>2</th> <th class="Today">3</th> <th>4</th> <th>5</th>
+        </tr>
+        <tr>
+            <th>6</th> <th class="Holiday">7</th> <th>8</th> <th>9</th> <th>10</th> <th>11</th> <th>12</th>
+        </tr>
+        <tr>
+            <th>13</th> <th>14</th> <th>15</th> <th>16</th> <th>17</th> <th>18</th> <th>19</th>
+        </tr>
+        <tr>
+            <th>20</th> <th>21</th> <th>22</th> <th class="Holiday">23</th> <th>24</th> <th>25</th> <th>26</th>
+        </tr>
+        <tr>
+            <th>27</th> <th>28</th> <th>29</th> <th>30</th> <th class="NotThisMonth">1</th> <th class="NotThisMonth">2</th> <th class="NotThisMonth">3</th>
+        </tr>
+    </table>
+    <input class="Button" type="button" value="Add Event">
+</div>
+</section>
+<section aria-label="booking widget">
+<div  id="booking" class="Widgets">
+    <div class="header">
+      <img src="css/img/Hotel_Relais.png">
+        <h2>Hotel Relais</h2>
+        <a>Paris, France</a>
+        <div class="icon"></div>
+    </div>
+    <form action="">
+        <fieldset>
+            <dl class="checkInOut">
+                <dt><label for="CheckIn">Check in</label></dt>
+                <dd><input type="text" id="CheckIn" value="9 July, 2016"><button class="icon"><div class="calendarimage"></div><span class="wcag-hidden">Choose date</span></button></dd>
+                <dt><label for="CheckOut">Check out</label></dt>
+                <dd><input type="text" id="CheckOut" value="16 July, 2016"><button class="icon"><div class="calendarimage"></div><span class="wcag-hidden">Choose date</span></button></dd>
+
+            </dl>
+            <dl class="ForCheckBox">
+                <div><input id="checkBox" type="checkbox" value="Flexible dates">
+                 <div class="CheckImg"></div></div>
+                <label for="checkBox">Flexible dates</label></dl>
+            <dl class="row">
+                <div>
+              <dt><label for="Adults">Adults</label></dt>
+              <dd><input type="text" id="Adults" value="2"><button class="icon"><div class="triangleimage"></div><span class="wcag-hidden">Choose number of</span></button></dd>
+                </div>
+                <div>
+                <dt><label for="Children">Children</label></dt>
+                <dd><input type="text" id="Children" value="1"><button class="icon"><div class="triangleimage"></div><span class="wcag-hidden">Choose number of</span></button></dd>
+                </div>
+            </dl>
+            <div>
+                <button class="Button"> <div class="iconsearch"></div>Search Rooms</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</section>
+<section aria-label="destination widget">
+<div  id="destination" class="Widgets">
+<div class="panel">
+    <ul>
+        <li class="selected"><a href="#" role="button" class="first-icon" role="button"><span class="wcag-hidden">Watch info</span></a></li>
+        <li><a href="#" class="second-icon" role="button"><span class="wcag-hidden">Find on map</span> </a></li>
+        <li><a href="#" class="third-icon" role="button"><span class="wcag-hidden">Add to favorite</span></a></li>
+    </ul>
+</div>
+    <div class="info">
+        <div class="square"></div>
+        <h3>My most favourite place in the world</h3>
+        <p><span id="CounterReviews">154</span> Reviews</p>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a pulvinar ipsum. Aliquam sit amet iaculis dolor. Vivamus sed diam sollicitudin. </p>
+        <a href="#" role="link">Read more</a>
+
+    </div>
+    <div class="img"><img src="css/img/destination.jpg">
+        <div class="text">
+            <button><a href="#" class="iconComments"><span class="wcag-hidden">To comments</span></a> 723</button>
+            <button ><a href="#" class="iconLikes" role="button"><span class="wcag-hidden">Like Unlike</span></a> 2709</button>
+        </div>
+    </div>
+</div></section>
+<section aria-label="email widget">
+<div  id="email" class="Widgets" >
+    <form action="">
+        <fieldset>
+            <dl>
+                <dd><div class="Usersemails">
+                    <div class="Emailtext">rick.james@mail.com<a role="button" href="#" class="deleteuserimage"><span class="wcag-hidden">Delete email</span></a></div>
+                </div>
+                    <a href="#" class="iconEmail" role="button"> <span class="wcag-hidden">Add Email</span></a>
+                </dd>
+                <dd><input type="text" value="Subject"><a role="button" href="#" class="iconSubject"><span class="wcag-hidden">Add Subject</span></a></dd>
+                <dd><textarea>Message</textarea></dd>
+            </dl>
+        </fieldset>
+        <div>
+            <input type="button" class="Button" value="Send">
+        </div>
+    </form>
+</div></section>
+<section aria-label="bars widget">
+<div id="bars" class="Widgets">
+    <div class="metrics">
+        <div>40</div>
+        <div>30</div>
+        <div>20</div>
+        <div>0</div>
+    </div>
+    <div class="Bars">
+        <div class="Bar">
+            <div class="sum">17 <div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Mon</div>
+        <div class="Bar">
+            <div class="sum">19<div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Tues</div>
+        <div class="Bar">
+            <div class="sum">27<div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Wed</div>
+        <div class="Bar">
+            <div class="sum">32<div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Thu</div>
+        <div class="Bar">
+            <div class="sum">28<div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Fri</div>
+        <div class="Bar">
+            <div class="sum">34<div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Sat</div>
+        <div class="Bar">
+            <div class="sum">30<div class="triangle"></div></div>
+            <div class="block"><div></div></div>
+            Sun</div>
+    </div>
+</div>
+</section>
+</body>
+</html>
